@@ -1,0 +1,30 @@
+{
+  "name": "tasty-bites-food-menu",
+  "version": "1.0.0",
+  "description": "A simple, interactive HTML food menu website for small food businesses",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . -p 3000",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "keywords": [
+    "food",
+    "menu",
+    "restaurant",
+    "html",
+    "css",
+    "javascript",
+    "static-site",
+    "github-pages"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/foodprojecthtml.git"
+  },
+  "homepage": "https://yourusername.github.io/foodprojecthtml",
+  "devDependencies": {},
+  "dependencies": {}
+}
