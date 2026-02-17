@@ -6,44 +6,45 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    color: #2f2f2f;
+    background-color: #f4f5f7;
 }
 
 .container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
 }
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background-color: #1f3b5b;
+    color: #ffffff;
     text-align: center;
-    padding: 60px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 32px 16px;
+    border-bottom: 1px solid #17304a;
 }
 
 .logo {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    animation: fadeInDown 1s ease-in;
+    font-size: 1.9rem;
+    margin-bottom: 6px;
+    animation: fadeInDown 0.6s ease-in;
 }
 
 .tagline {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    animation: fadeInUp 1s ease-in;
+    font-size: 0.95rem;
+    opacity: 0.95;
+    animation: fadeInUp 0.6s ease-in;
 }
 
 /* Navigation */
 .nav {
-    background-color: white;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 12px 0;
+    border-bottom: 1px solid #e3e6ea;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -52,193 +53,192 @@ body {
 .nav .container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 8px;
     flex-wrap: wrap;
 }
 
 .nav-btn {
-    padding: 10px 25px;
-    border: 2px solid #667eea;
-    background-color: white;
-    color: #667eea;
-    border-radius: 25px;
+    padding: 8px 12px;
+    border: 1px solid #1f3b5b;
+    background-color: #ffffff;
+    color: #1f3b5b;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.nav-btn:hover {
-    background-color: #667eea;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
-}
-
+.nav-btn:hover,
 .nav-btn.active {
-    background-color: #667eea;
-    color: white;
+    background-color: #1f3b5b;
+    color: #ffffff;
 }
 
 /* About Section */
 .about {
-    background-color: white;
-    padding: 60px 20px;
+    background-color: #ffffff;
+    padding: 32px 0;
     text-align: center;
+    border-bottom: 1px solid #e3e6ea;
 }
 
 .about h2 {
-    font-size: 2.5rem;
-    color: #667eea;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
+    color: #1f3b5b;
+    margin-bottom: 14px;
 }
 
 .about p {
-    font-size: 1.1rem;
-    max-width: 800px;
+    font-size: 0.95rem;
+    max-width: 760px;
     margin: 0 auto;
-    color: #666;
-    line-height: 1.8;
+    color: #4c5560;
 }
 
-/* Menu Section */
+/* Highlights Section */
 .menu {
-    padding: 60px 20px;
+    padding: 32px 0;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 50px;
+    font-size: 1.6rem;
+    color: #1f3b5b;
+    margin-bottom: 20px;
 }
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 14px;
 }
 
 .menu-item {
-    background-color: white;
-    border-radius: 15px;
-    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e3e6ea;
+    border-radius: 6px;
+    padding: 16px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    animation: fadeIn 0.5s ease-in;
+    transition: box-shadow 0.2s ease;
+    animation: fadeIn 0.4s ease-in;
 }
 
 .menu-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .menu-item-image {
-    font-size: 4rem;
-    margin-bottom: 15px;
-}
-
-.menu-item h3 {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1f3b5b;
     margin-bottom: 10px;
 }
 
+.menu-item h3 {
+    font-size: 1.1rem;
+    color: #2f2f2f;
+    margin-bottom: 8px;
+}
+
 .description {
-    color: #666;
-    font-size: 0.95rem;
-    margin-bottom: 15px;
-    min-height: 40px;
+    color: #5b6470;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    min-height: 36px;
 }
 
 .price {
-    font-size: 1.5rem;
-    color: #667eea;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #1f3b5b;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .order-btn {
-    padding: 12px 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    border-radius: 25px;
+    padding: 9px 14px;
+    background-color: #1f3b5b;
+    color: #ffffff;
+    border: 1px solid #1f3b5b;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .order-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    background-color: #17304a;
 }
 
 .order-btn:active {
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 
 /* Contact Section */
 .contact {
-    background-color: white;
-    padding: 60px 20px;
+    background-color: #ffffff;
+    padding: 32px 0;
+    border-top: 1px solid #e3e6ea;
 }
 
 .contact h2 {
     text-align: center;
-    font-size: 2.5rem;
-    color: #667eea;
-    margin-bottom: 40px;
+    font-size: 1.6rem;
+    color: #1f3b5b;
+    margin-bottom: 18px;
 }
 
 .contact-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 12px;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .contact-item {
     text-align: center;
-    padding: 20px;
+    padding: 14px;
+    border: 1px solid #e3e6ea;
+    border-radius: 6px;
+    background-color: #fafbfc;
 }
 
 .contact-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    color: #2f2f2f;
 }
 
 .contact-item p {
-    color: #666;
-    font-size: 1.1rem;
+    color: #5b6470;
+    font-size: 0.92rem;
 }
 
 /* Footer */
 .footer {
-    background-color: #333;
-    color: white;
+    background-color: #2f2f2f;
+    color: #ffffff;
     text-align: center;
-    padding: 30px 20px;
+    padding: 18px 16px;
+    font-size: 0.9rem;
 }
 
-/* Order Counter */
+/* Profile Counter */
 .order-counter {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 15px 30px;
-    border-radius: 50px;
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-    font-size: 1.1rem;
+    bottom: 16px;
+    right: 16px;
+    background-color: #1f3b5b;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 4px;
+    border: 1px solid #17304a;
+    font-size: 0.88rem;
     font-weight: 600;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: opacity 0.2s ease;
     z-index: 1000;
 }
 
@@ -247,15 +247,15 @@ body {
 }
 
 #orderCount {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 /* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
@@ -266,7 +266,7 @@ body {
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-30px);
+        transform: translateY(-10px);
     }
     to {
         opacity: 1;
@@ -277,7 +277,7 @@ body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
@@ -290,33 +290,21 @@ body {
     display: none !important;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Tablet and up */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 22px;
+    }
+
+    .header {
+        padding: 44px 22px;
+    }
+
     .logo {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .tagline {
-        font-size: 1rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .about h2 {
-        font-size: 2rem;
-    }
-
-    .menu-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-    }
-
-    .order-counter {
-        bottom: 20px;
-        right: 20px;
-        padding: 12px 20px;
         font-size: 1rem;
     }
 
@@ -325,17 +313,65 @@ body {
     }
 
     .nav-btn {
-        padding: 8px 20px;
-        font-size: 0.9rem;
+        font-size: 0.92rem;
+        padding: 9px 14px;
     }
-}
 
-@media (max-width: 480px) {
-    .header {
-        padding: 40px 20px;
+    .about,
+    .menu,
+    .contact {
+        padding: 44px 0;
+    }
+
+    .about h2,
+    .section-title,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
     }
 
     .menu-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .order-counter {
+        bottom: 20px;
+        right: 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Laptop and up */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .menu-item {
+        padding: 18px;
+    }
+
+    .nav-btn {
+        padding: 10px 16px;
+        font-size: 0.95rem;
     }
 }
