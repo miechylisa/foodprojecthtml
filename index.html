@@ -3,158 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Delicious homemade food menu - Your go-to place for tasty meals">
-    <title>Tasty Bites - Food Menu</title>
+    <meta name="description" content="Professional student profile for Lisa Michelle, a Computer Science university student.">
+    <title>FoodProjectHTML - Lisa Michelle Profile</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
     <header class="header">
         <div class="container">
-            <h1 class="logo">🍽️ Tasty Bites</h1>
-            <p class="tagline">Delicious Food Made With Love</p>
+            <h1 class="logo">Lisa Michelle</h1>
+            <p class="tagline">University Student Profile | Computer Science</p>
         </div>
     </header>
 
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <button class="nav-btn active" data-category="all">All Items</button>
-            <button class="nav-btn" data-category="appetizers">Appetizers</button>
-            <button class="nav-btn" data-category="main">Main Course</button>
-            <button class="nav-btn" data-category="desserts">Desserts</button>
-            <button class="nav-btn" data-category="drinks">Drinks</button>
+            <button class="nav-btn active" data-category="all">All</button>
+            <button class="nav-btn" data-category="education">Education</button>
+            <button class="nav-btn" data-category="technical">Technical Skills</button>
+            <button class="nav-btn" data-category="projects">Projects</button>
+            <button class="nav-btn" data-category="leadership">Leadership</button>
         </div>
     </nav>
 
     <!-- About Section -->
     <section class="about">
         <div class="container">
-            <h2>Welcome to Tasty Bites!</h2>
-            <p>We are passionate about serving delicious, homemade food made with the freshest ingredients.
-               Our menu features a variety of dishes that cater to every taste. Order online or visit us today!</p>
+            <h2>Professional Profile</h2>
+            <p>Lisa Michelle is a dedicated Computer Science student at university with a strong academic foundation,
+               practical software development experience, and proven leadership in collaborative projects.
+               She is focused on building reliable digital solutions and growing as a future software engineer.</p>
         </div>
     </section>
 
-    <!-- Menu Section -->
+    <!-- Profile Highlights Section -->
     <section class="menu">
         <div class="container">
-            <h2 class="section-title">Our Menu</h2>
+            <h2 class="section-title">Profile Highlights</h2>
             <div class="menu-grid" id="menuGrid">
-                <!-- Appetizers -->
-                <div class="menu-item" data-category="appetizers">
-                    <div class="menu-item-image">🥗</div>
-                    <h3>Fresh Garden Salad</h3>
-                    <p class="description">Crisp lettuce, tomatoes, cucumbers with house dressing</p>
-                    <p class="price">$8.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <!-- Education -->
+                <div class="menu-item" data-category="education">
+                    <div class="menu-item-image">EDU</div>
+                    <h3>BSc Computer Science</h3>
+                    <p class="description">Pursuing a Bachelor of Science in Computer Science with consistent academic progress.</p>
+                    <p class="price">Expected Graduation: 2027</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <div class="menu-item" data-category="appetizers">
-                    <div class="menu-item-image">🍤</div>
-                    <h3>Crispy Shrimp</h3>
-                    <p class="description">Golden fried shrimp with spicy mayo</p>
-                    <p class="price">$12.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <div class="menu-item" data-category="education">
+                    <div class="menu-item-image">FOC</div>
+                    <h3>Academic Focus</h3>
+                    <p class="description">Strong interest in software engineering, algorithms, and database systems.</p>
+                    <p class="price">Focus Area: Software Development</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <div class="menu-item" data-category="appetizers">
-                    <div class="menu-item-image">🥟</div>
-                    <h3>Vegetable Dumplings</h3>
-                    <p class="description">Steamed dumplings with soy dipping sauce</p>
-                    <p class="price">$9.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <div class="menu-item" data-category="education">
+                    <div class="menu-item-image">CRS</div>
+                    <h3>Relevant Coursework</h3>
+                    <p class="description">Completed core courses in data structures, OOP, web development, and computer networks.</p>
+                    <p class="price">Status: In Progress</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <!-- Main Course -->
-                <div class="menu-item" data-category="main">
-                    <div class="menu-item-image">🍔</div>
-                    <h3>Classic Burger</h3>
-                    <p class="description">Juicy beef patty with lettuce, tomato, and special sauce</p>
-                    <p class="price">$14.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <!-- Technical Skills -->
+                <div class="menu-item" data-category="technical">
+                    <div class="menu-item-image">LANG</div>
+                    <h3>Programming Languages</h3>
+                    <p class="description">Proficient in Python, JavaScript, and Java with practical coding experience.</p>
+                    <p class="price">Level: Advanced Intermediate</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <div class="menu-item" data-category="main">
-                    <div class="menu-item-image">🍕</div>
-                    <h3>Margherita Pizza</h3>
-                    <p class="description">Fresh mozzarella, basil, and tomato sauce</p>
-                    <p class="price">$16.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <div class="menu-item" data-category="technical">
+                    <div class="menu-item-image">WEB</div>
+                    <h3>Web Development</h3>
+                    <p class="description">Builds responsive front-end interfaces using HTML, CSS, and JavaScript.</p>
+                    <p class="price">Focus: Clean and Maintainable UI</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <div class="menu-item" data-category="main">
-                    <div class="menu-item-image">🍝</div>
-                    <h3>Pasta Carbonara</h3>
-                    <p class="description">Creamy pasta with bacon and parmesan</p>
-                    <p class="price">$15.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <div class="menu-item" data-category="technical">
+                    <div class="menu-item-image">TOL</div>
+                    <h3>Tools and Platforms</h3>
+                    <p class="description">Experienced with Git, GitHub, VS Code, and collaborative version control workflows.</p>
+                    <p class="price">Workflow: Team-Oriented</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <div class="menu-item" data-category="main">
-                    <div class="menu-item-image">🍗</div>
-                    <h3>Grilled Chicken</h3>
-                    <p class="description">Marinated chicken breast with vegetables</p>
-                    <p class="price">$17.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <!-- Projects -->
+                <div class="menu-item" data-category="projects">
+                    <div class="menu-item-image">PRJ1</div>
+                    <h3>Personal Portfolio Website</h3>
+                    <p class="description">Designed and developed a personal profile site to present academic and technical achievements.</p>
+                    <p class="price">Type: Front-End Project</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <div class="menu-item" data-category="main">
-                    <div class="menu-item-image">🥘</div>
-                    <h3>Spicy Curry Bowl</h3>
-                    <p class="description">Aromatic curry with rice and naan bread</p>
-                    <p class="price">$13.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <div class="menu-item" data-category="projects">
+                    <div class="menu-item-image">PRJ2</div>
+                    <h3>Student Records System</h3>
+                    <p class="description">Built a basic CRUD application for managing student records and report summaries.</p>
+                    <p class="price">Type: Full-Stack Learning Project</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <!-- Desserts -->
-                <div class="menu-item" data-category="desserts">
-                    <div class="menu-item-image">🍰</div>
-                    <h3>Chocolate Cake</h3>
-                    <p class="description">Rich chocolate cake with ganache frosting</p>
-                    <p class="price">$7.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <div class="menu-item" data-category="projects">
+                    <div class="menu-item-image">PRJ3</div>
+                    <h3>Data Analytics Mini Project</h3>
+                    <p class="description">Analyzed structured datasets to generate simple insights and visual summaries.</p>
+                    <p class="price">Type: Data and Reporting</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <div class="menu-item" data-category="desserts">
-                    <div class="menu-item-image">🍨</div>
-                    <h3>Ice Cream Sundae</h3>
-                    <p class="description">Vanilla ice cream with toppings of your choice</p>
-                    <p class="price">$6.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <!-- Leadership -->
+                <div class="menu-item" data-category="leadership">
+                    <div class="menu-item-image">LDR1</div>
+                    <h3>Computer Club Leadership</h3>
+                    <p class="description">Supports planning of coding sessions and peer-learning activities for fellow students.</p>
+                    <p class="price">Role: Active Committee Member</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <div class="menu-item" data-category="desserts">
-                    <div class="menu-item-image">🥧</div>
-                    <h3>Apple Pie</h3>
-                    <p class="description">Homemade apple pie served warm</p>
-                    <p class="price">$8.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <div class="menu-item" data-category="leadership">
+                    <div class="menu-item-image">LDR2</div>
+                    <h3>Peer Academic Support</h3>
+                    <p class="description">Assists classmates in programming concepts, debugging, and assignment preparation.</p>
+                    <p class="price">Role: Peer Mentor</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
 
-                <!-- Drinks -->
-                <div class="menu-item" data-category="drinks">
-                    <div class="menu-item-image">🥤</div>
-                    <h3>Fresh Lemonade</h3>
-                    <p class="description">Freshly squeezed lemonade</p>
-                    <p class="price">$3.99</p>
-                    <button class="order-btn">Add to Order</button>
-                </div>
-
-                <div class="menu-item" data-category="drinks">
-                    <div class="menu-item-image">☕</div>
-                    <h3>Coffee</h3>
-                    <p class="description">Hot or iced coffee</p>
-                    <p class="price">$4.99</p>
-                    <button class="order-btn">Add to Order</button>
-                </div>
-
-                <div class="menu-item" data-category="drinks">
-                    <div class="menu-item-image">🧃</div>
-                    <h3>Smoothies</h3>
-                    <p class="description">Fresh fruit smoothies - ask for flavors</p>
-                    <p class="price">$5.99</p>
-                    <button class="order-btn">Add to Order</button>
+                <div class="menu-item" data-category="leadership">
+                    <div class="menu-item-image">LDR3</div>
+                    <h3>Team Collaboration</h3>
+                    <p class="description">Works effectively in group projects with clear communication and task ownership.</p>
+                    <p class="price">Strength: Professional Collaboration</p>
+                    <button class="order-btn">Mark Reviewed</button>
                 </div>
             </div>
         </div>
@@ -163,19 +148,19 @@
     <!-- Contact Section -->
     <section class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
+            <h2>Contact Information</h2>
             <div class="contact-info">
                 <div class="contact-item">
-                    <h3>📍 Location</h3>
-                    <p>Tassia Kwandege, Nairobi</p>
+                    <h3>Email</h3>
+                    <p>lisa.michelle.student@example.com</p>
                 </div>
                 <div class="contact-item">
-                    <h3>📞 Phone</h3>
-                    <p>(254)707711025 </p>
+                    <h3>Phone</h3>
+                    <p>+1 (555) 123-4567</p>
                 </div>
                 <div class="contact-item">
-                    <h3>⏰ Hours</h3>
-                    <p>Mon-Sun: 10:00 AM - 10:00 PM</p>
+                    <h3>Location</h3>
+                    <p>University Campus, Computer Science Department</p>
                 </div>
             </div>
         </div>
@@ -184,13 +169,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Tasty Bites. Made with ❤️ for food lovers.</p>
+            <p>&copy; 2026 Lisa Michelle. Professional Student Profile.</p>
         </div>
     </footer>
 
-    <!-- Order Counter (sticky) -->
+    <!-- Profile Counter (sticky) -->
     <div class="order-counter" id="orderCounter">
-        <span id="orderCount">0</span> items selected
+        <span id="orderCount">0</span> highlights reviewed
     </div>
 
     <script src="script.js"></script>

@@ -1,4 +1,4 @@
-// Order counter
+// Profile review counter
 let orderCount = 0;
 
 // Get DOM elements
@@ -8,7 +8,7 @@ const orderCounter = document.getElementById('orderCounter');
 const orderCountDisplay = document.getElementById('orderCount');
 const orderButtons = document.querySelectorAll('.order-btn');
 
-// Filter menu items by category
+// Filter profile items by category
 function filterMenu(category) {
     const menuItems = document.querySelectorAll('.menu-item');
 
@@ -45,7 +45,7 @@ navButtons.forEach(button => {
     });
 });
 
-// Handle order button clicks
+// Handle review button clicks
 orderButtons.forEach(button => {
     button.addEventListener('click', function(e) {
         // Increment counter
@@ -64,7 +64,7 @@ orderButtons.forEach(button => {
 
         // Change button text temporarily
         const originalText = this.textContent;
-        this.textContent = 'Added!';
+        this.textContent = 'Reviewed';
         this.style.background = '#28a745';
 
         setTimeout(() => {
@@ -113,7 +113,7 @@ window.addEventListener('scroll', revealOnScroll);
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Food menu website loaded successfully!');
+    console.log('Student profile website loaded successfully.');
 
     // Set initial state
     filterMenu('all');
